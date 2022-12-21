@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: bf9fb9c73b53d2240bcd30961c574c13
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Botsmatic Outline
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 676a7d05bfbbd4d4780462c3929a2133, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
