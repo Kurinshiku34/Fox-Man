@@ -76,6 +76,10 @@ public class Player : MonoBehaviour
         }
         
       // Canlarýn eksilmesi ve canýn bitince ölmeni saðlayan kodlar.
+        if (health == 3) {
+            Jumpscare.gameObject.SetActive(false);
+            JumpscarePlayer.gameObject.SetActive(false);
+        }
         if (health == 2) { heart3.gameObject.SetActive(false); }
         if (health == 1) { heart2.gameObject.SetActive(false); }
         if (health == 0) {
@@ -89,11 +93,13 @@ public class Player : MonoBehaviour
     IEnumerator JumpscareIE()
     {
         Music.Pause();
+        JumpscarePlayer.gameObject.SetActive(true);
         Jumpscare.gameObject.SetActive(true);
         videoPlayer.Play();
         yield return new WaitForSecondsRealtime(4f);
         videoPlayer.Stop();
         Jumpscare.SetActive(false);
+        JumpscarePlayer.SetActive(false);
         Music.UnPause();
         Destroy(Jumpscare);
         Destroy(JumpscarePlayer);
